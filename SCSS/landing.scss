@@ -1,0 +1,42 @@
+$main-colour: whitesmoke;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.name {
+  // border: 2px solid $main-colour;
+  height: 900px;
+  color: $main-colour;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: 220px;
+    // border: 2px green solid;
+    font-family: "Dancing Script", cursive;
+  }
+  &__btn {
+    font-size: 30px;
+    margin-top: 100px;
+    color: $main-colour;
+    background-color: black;
+    border: 5px solid $main-colour;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    &:hover {
+      background-color: $main-colour;
+      border: 5px solid $main-colour;
+      color: black;
+    }
+  }
+}

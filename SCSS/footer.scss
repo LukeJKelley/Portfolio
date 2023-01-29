@@ -1,0 +1,17 @@
+@use "./devices.scss";
+
+$text-colour: whitesmoke;
+
+.footer {
+  text-align: center;
+
+  & > a {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    color: $text-colour;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

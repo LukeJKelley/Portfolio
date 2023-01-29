@@ -1,0 +1,116 @@
+@use "./devices.scss";
+
+$button-width: 200px;
+$button-height: 30px;
+$text-colour: whitesmoke;
+$div-background-main: rgba(0, 0, 0, 0.55);
+$div-background-border: rgba(101, 37, 212, 0.2);
+$div-border: 2px gray solid;
+$button-hover-colour: rgba(67, 81, 163, 0.55);
+$div-box-width: 1000px;
+$div-box-height: 800px;
+$div-width: 90vw;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.skills {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $div-background-border;
+  border-radius: 12px;
+  color: $text-colour;
+  margin-top: 50px;
+  @include devices.phone {
+    width: 90vw;
+  }
+  @include devices.tablet {
+    width: 90vw;
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $div-background-main;
+    width: 80vw;
+    border: $div-border;
+    margin: 30px;
+    font-size: 50px;
+    @include devices.phone {
+      width: 80vw;
+      margin: 30px 30px 0px 30px;
+    }
+    @include devices.tablet {
+      width: 80vw;
+      margin: 30px 30px 0px 30px;
+    }
+  }
+  &__display {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $div-background-main;
+    border: $div-border;
+    margin: 30px;
+    @include devices.phone {
+      height: fit-content;
+      width: 80vw;
+      margin: 0px 30px 30px 30px;
+    }
+    @include devices.tablet {
+      height: fit-content;
+      width: 80vw;
+      margin: 0px 30px 30px 30px;
+    }
+    &__card {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      height: 15vh;
+      width: 20vw;
+      background-color: $div-background-main;
+      @include devices.phone {
+        width: 60vw;
+        height: 30vh;
+        margin: 10px;
+      }
+      @include devices.tablet {
+        width: 60vw;
+        height: 30vh;
+        margin: 10px;
+      }
+      &:hover {
+        background-color: $div-background-border;
+      }
+      & > img {
+        border: 5px $text-colour solid;
+        width: 9vw;
+        height: 15vh;
+        @include devices.phone {
+          width: 40vw;
+        }
+        @include devices.tablet {
+          width: 35vw;
+        }
+      }
+    }
+  }
+}

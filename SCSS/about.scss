@@ -1,0 +1,222 @@
+@use "./devices.scss";
+
+$button-width: 200px;
+$button-height: 30px;
+$text-colour: whitesmoke;
+$div-background-main: rgba(0, 0, 0, 0.55);
+$div-background-border: rgba(101, 37, 212, 0.2);
+$div-width-devices: 70vw;
+$img-width: 25vw;
+$button-hover-colour: rgba(67, 81, 163, 0.55);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 90vw;
+  height: 92vh;
+  margin-top: 40px;
+  background-color: $div-background-border;
+  border-radius: 12px;
+  @include devices.phone {
+    width: calc($div-width-devices + 60px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  @include devices.tablet {
+    width: calc($div-width-devices + 60px);
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  @include devices.tablet-landscape {
+    width: calc($div-width-devices + 60px);
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  @include devices.laptop {
+    width: $div-width-devices;
+  }
+  &__main {
+    width: calc(100vw / 2);
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $div-background-main;
+    border: 2px gray solid;
+    @include devices.phone {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include devices.tablet {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include devices.tablet-landscape {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include devices.laptop {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__img {
+      margin: 5px;
+      border-radius: 50%;
+      border: 4px $text-colour solid;
+      @include devices.phone {
+        width: $img-width;
+      }
+      @include devices.tablet {
+        width: $img-width;
+      }
+      @include devices.tablet-landscape {
+        width: $img-width;
+      }
+      @include devices.laptop {
+        width: calc($img-width - 3vw);
+      }
+    }
+    &__para {
+      margin: 40px;
+      padding: 10px;
+      font-size: 25px;
+      border: 2px gray solid;
+      border-top: 2px;
+      border-left: 2px;
+      border-right: 2px;
+      color: $text-colour;
+      @include devices.phone {
+        margin: 20px;
+        font-size: 18px;
+      }
+      @include devices.tablet {
+        margin: 20px;
+        font-size: 18px;
+      }
+      @include devices.tablet-landscape {
+        margin: 20px;
+        font-size: 18px;
+      }
+      @include devices.laptop {
+        margin: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+  &__panel {
+    margin: 30px;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $text-colour;
+    background-color: $div-background-main;
+    border: 2px gray solid;
+    @include devices.phone {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+    @include devices.tablet {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+    @include devices.tablet-landscape {
+      width: $div-width-devices;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+    &__card {
+      margin: 0.5vw 1vw 0.5vw 1vw;
+      padding: 0.5vw;
+      width: 14vw;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: $text-colour;
+      @include devices.phone {
+        font-size: 10px;
+      }
+      @include devices.tablet {
+        font-size: 15px;
+      }
+      @include devices.tablet-landscape {
+        font-size: 18px;
+      }
+      &:hover {
+        background-color: $button-hover-colour;
+      }
+    }
+  }
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  @include devices.phone {
+    font-size: 30px;
+  }
+  @include devices.tablet {
+    font-size: 30px;
+  }
+  @include devices.tablet-landscape {
+    font-size: 30px;
+  }
+}
+icon {
+  font-size: 40px;
+}
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-colour;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  color: $text-colour;
+  font-size: 40px;
+  @include devices.phone {
+    font-size: 20px;
+  }
+  @include devices.tablet {
+    font-size: 30px;
+  }
+}

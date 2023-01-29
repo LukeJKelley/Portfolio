@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+}
+.footer > a {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: whitesmoke;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

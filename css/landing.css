@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.name {
+  height: 900px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name__heading {
+  font-size: 220px;
+  font-family: "Dancing Script", cursive;
+}
+.name__btn {
+  font-size: 30px;
+  margin-top: 100px;
+  color: whitesmoke;
+  background-color: black;
+  border: 5px solid whitesmoke;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+}
+.name__btn:hover {
+  background-color: whitesmoke;
+  border: 5px solid whitesmoke;
+  color: black;
+}

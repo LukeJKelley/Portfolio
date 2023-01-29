@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.skills {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(101, 37, 212, 0.2);
+  border-radius: 12px;
+  color: whitesmoke;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 576px) {
+  .skills {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills {
+    width: 90vw;
+  }
+}
+.skills__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 80vw;
+  border: 2px gray solid;
+  margin: 30px;
+  font-size: 50px;
+}
+@media only screen and (max-width: 576px) {
+  .skills__header {
+    width: 80vw;
+    margin: 30px 30px 0px 30px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__header {
+    width: 80vw;
+    margin: 30px 30px 0px 30px;
+  }
+}
+.skills__display {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 2px gray solid;
+  margin: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .skills__display {
+    height: fit-content;
+    width: 80vw;
+    margin: 0px 30px 30px 30px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__display {
+    height: fit-content;
+    width: 80vw;
+    margin: 0px 30px 30px 30px;
+  }
+}
+.skills__display__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 15vh;
+  width: 20vw;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+@media only screen and (max-width: 576px) {
+  .skills__display__card {
+    width: 60vw;
+    height: 30vh;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__display__card {
+    width: 60vw;
+    height: 30vh;
+    margin: 10px;
+  }
+}
+.skills__display__card:hover {
+  background-color: rgba(101, 37, 212, 0.2);
+}
+.skills__display__card > img {
+  border: 5px whitesmoke solid;
+  width: 9vw;
+  height: 15vh;
+}
+@media only screen and (max-width: 576px) {
+  .skills__display__card > img {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__display__card > img {
+    width: 35vw;
+  }
+}
