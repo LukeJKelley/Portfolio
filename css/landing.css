@@ -4,7 +4,16 @@
 }
 
 body {
-  background-color: black;
+  background-image: url("../imgs/space.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
 }
 
 .name {
@@ -18,6 +27,26 @@ body {
   font-size: 220px;
   font-family: "Dancing Script", cursive;
 }
+@media only screen and (max-width: 576px) {
+  .name__heading {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .name__heading {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .name__heading {
+    font-size: 140px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .name__heading {
+    font-size: 180px;
+  }
+}
 .name__btn {
   font-size: 30px;
   margin-top: 100px;
@@ -29,6 +58,38 @@ body {
   width: 80px;
   font-family: "Dancing Script", cursive;
   font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  .name__btn {
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .name__btn {
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .name__btn {
+    font-size: 25px;
+    height: 70px;
+    width: 70px;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .name__btn {
+    font-size: 25px;
+    height: 70px;
+    width: 70px;
+    margin-top: 80px;
+  }
 }
 .name__btn:hover {
   background-color: whitesmoke;
