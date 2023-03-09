@@ -15,6 +15,7 @@ main {
 
 .skills {
   width: 85vw;
+  height: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -29,6 +30,11 @@ main {
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   .skills {
     width: 90vw;
   }
@@ -50,6 +56,12 @@ main {
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__header {
+    width: 80vw;
+    margin: 30px 30px 0px 30px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   .skills__header {
     width: 80vw;
     margin: 30px 30px 0px 30px;
@@ -81,15 +93,23 @@ main {
     margin: 0px 30px 30px 30px;
   }
 }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .skills__display {
+    height: fit-content;
+    width: 80vw;
+    margin: 0px 30px 30px 30px;
+  }
+}
 .skills__display__card {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  height: 15vh;
+  justify-content: center;
+  padding: 40px;
+  height: 18vh;
   width: 20vw;
   background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
 }
 @media only screen and (max-width: 576px) {
   .skills__display__card {
@@ -105,8 +125,31 @@ main {
     margin: 10px;
   }
 }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .skills__display__card {
+    width: 60vw;
+    height: 30vh;
+    margin: 10px;
+  }
+}
+.skills__display__card--github {
+  font-size: 30px;
+  margin: 5px;
+}
+.skills__display__card--github:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 5px;
+  border-radius: 12px;
+}
+.skills__display__card--github > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 .skills__display__card:hover {
   background-color: rgba(101, 37, 212, 0.2);
+}
+.skills__display__card > h3 {
+  margin: 5px;
 }
 .skills__display__card > img {
   border: 5px whitesmoke solid;
@@ -121,5 +164,10 @@ main {
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .skills__display__card > img {
     width: 35vw;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .skills__display__card > img {
+    width: 25vw;
   }
 }

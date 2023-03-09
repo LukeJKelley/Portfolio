@@ -27,7 +27,7 @@ $xxl: 1400px; //TV
   }
 }
 @mixin tv {
-  @media only screen and (min-width: $xxl + 1px) {
+  @media only screen and (min-width: $xxl) {
     @content;
   }
 }

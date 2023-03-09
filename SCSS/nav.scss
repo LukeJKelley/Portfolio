@@ -130,6 +130,9 @@ button {
       height: 70%;
       width: 70%;
       animation: float 2s infinite ease;
+      @include devices.laptop {
+        height: 40%;
+      }
     }
 
     @keyframes slide {

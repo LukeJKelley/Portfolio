@@ -18,15 +18,14 @@ main {
   justify-content: center;
   flex-direction: row-reverse;
   width: 90vw;
-  height: 92vh;
-  margin-top: 40px;
+  height: fit-content;
+  margin-top: 60px;
   background-color: rgba(101, 37, 212, 0.2);
   border-radius: 12px;
 }
 @media only screen and (max-width: 576px) {
   .about {
     width: calc(70vw + 60px);
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
@@ -35,7 +34,7 @@ main {
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .about {
     width: calc(70vw + 60px);
-    height: 95vh;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
@@ -44,7 +43,7 @@ main {
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .about {
     width: calc(70vw + 60px);
-    height: 95vh;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
@@ -52,10 +51,13 @@ main {
 }
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
   .about {
-    width: 70vw;
+    margin-top: 70px;
+    width: 90vw;
+    height: fit-content;
   }
 }
 .about__main {
+  margin-top: 100px;
   width: 50vw;
   margin: 30px;
   display: flex;
@@ -95,12 +97,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2px;
   }
 }
 .about__main__img {
-  margin: 5px;
+  margin-top: 15px;
   border-radius: 50%;
   border: 4px whitesmoke solid;
+  height: 25vw;
 }
 @media only screen and (max-width: 576px) {
   .about__main__img {
@@ -119,11 +123,11 @@ main {
 }
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
   .about__main__img {
-    width: 22vw;
+    width: 25vw;
   }
 }
 .about__main__para {
-  margin: 40px;
+  margin: 20px;
   padding: 10px;
   font-size: 25px;
   border: 2px gray solid;

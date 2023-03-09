@@ -27,36 +27,39 @@ main {
   justify-content: center;
   flex-direction: row-reverse;
   width: 90vw;
-  height: 92vh;
-  margin-top: 40px;
+  height: fit-content;
+  margin-top: 60px;
   background-color: $div-background-border;
   border-radius: 12px;
   @include devices.phone {
     width: calc($div-width-devices + 60px);
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
   }
   @include devices.tablet {
     width: calc($div-width-devices + 60px);
-    height: 95vh;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
   }
   @include devices.tablet-landscape {
     width: calc($div-width-devices + 60px);
-    height: 95vh;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
   }
   @include devices.laptop {
-    width: $div-width-devices;
+    margin-top: 70px;
+    width: $div-width-devices + 20vw;
+    height: fit-content;
   }
   &__main {
+    margin-top: 100px;
     width: calc(100vw / 2);
+
     margin: 30px;
     display: flex;
     align-items: center;
@@ -87,12 +90,14 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 2px;
     }
 
     &__img {
-      margin: 5px;
+      margin-top: 15px;
       border-radius: 50%;
       border: 4px $text-colour solid;
+      height: $img-width;
       @include devices.phone {
         width: $img-width;
       }
@@ -103,11 +108,11 @@ main {
         width: $img-width;
       }
       @include devices.laptop {
-        width: calc($img-width - 3vw);
+        width: $img-width;
       }
     }
     &__para {
-      margin: 40px;
+      margin: 20px;
       padding: 10px;
       font-size: 25px;
       border: 2px gray solid;

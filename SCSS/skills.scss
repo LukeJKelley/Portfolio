@@ -26,6 +26,7 @@ main {
 
 .skills {
   width: 85vw;
+  height: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -37,6 +38,9 @@ main {
     width: 90vw;
   }
   @include devices.tablet {
+    width: 90vw;
+  }
+  @include devices.tablet-landscape {
     width: 90vw;
   }
   &__header {
@@ -53,6 +57,10 @@ main {
       margin: 30px 30px 0px 30px;
     }
     @include devices.tablet {
+      width: 80vw;
+      margin: 30px 30px 0px 30px;
+    }
+    @include devices.tablet-landscape {
       width: 80vw;
       margin: 30px 30px 0px 30px;
     }
@@ -78,15 +86,21 @@ main {
       width: 80vw;
       margin: 0px 30px 30px 30px;
     }
+    @include devices.tablet-landscape {
+      height: fit-content;
+      width: 80vw;
+      margin: 0px 30px 30px 30px;
+    }
     &__card {
       display: flex;
       align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      height: 15vh;
+      justify-content: center;
+      padding: 40px;
+      height: 18vh;
       width: 20vw;
       background-color: $div-background-main;
+      border-radius: 12px;
       @include devices.phone {
         width: 60vw;
         height: 30vh;
@@ -97,8 +111,30 @@ main {
         height: 30vh;
         margin: 10px;
       }
+      @include devices.tablet-landscape {
+        width: 60vw;
+        height: 30vh;
+        margin: 10px;
+      }
+      &--github {
+        font-size: 30px;
+        margin: 5px;
+        &:hover {
+          background-color: $div-background-main;
+          padding: 5px;
+          border-radius: 12px;
+        }
+        & > a {
+          text-decoration: none;
+          color: $text-colour;
+        }
+      }
+
       &:hover {
         background-color: $div-background-border;
+      }
+      & > h3 {
+        margin: 5px;
       }
       & > img {
         border: 5px $text-colour solid;
@@ -109,6 +145,9 @@ main {
         }
         @include devices.tablet {
           width: 35vw;
+        }
+        @include devices.tablet-landscape {
+          width: 25vw;
         }
       }
     }
